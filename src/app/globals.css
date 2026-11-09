@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --coral: #fc6a60;
+  --purple: #5834f8;
+  --yellow: #fac70f;
+}
+
+body {
+  color: #111111;
+  background-color: #f8f9fa;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Forçar títulos e textos principais sempre com alto peso e contraste */
+h1, h2, h3, h4, h5, h6 {
+  color: #111111;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+}
+
+p, span, li, a, td, th {
+  color: #111111;
+  font-weight: 700;
+}
+
+/* Animações e microinterações de hover nos cards */
+.interactive-card {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 3px solid #111111;
+  box-shadow: 4px 4px 0px #111111;
+}
+
+.interactive-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0px #111111;
+}
+
+.btn-brand-coral {
+  background-color: #fc6a60;
+  color: #000000;
+  font-weight: 900;
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  transition: all 0.2s ease;
+}
+
+.btn-brand-coral:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #000000;
+}
+
+.btn-brand-purple {
+  background-color: #5834f8;
+  color: #ffffff;
+  font-weight: 900;
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  transition: all 0.2s ease;
+}
+
+.btn-brand-purple:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #000000;
+}
+
+.btn-brand-yellow {
+  background-color: #fac70f;
+  color: #000000;
+  font-weight: 900;
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  transition: all 0.2s ease;
+}
+
+.btn-brand-yellow:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #000000;
+}
